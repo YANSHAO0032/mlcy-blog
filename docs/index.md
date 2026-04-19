@@ -2,40 +2,43 @@
 layout: home
 
 hero:
-  name: MuLiChenYuan's Blog
+  name: 慕黎尘渊的博客
   text: 君子藏器于身，待时而动
-  tagline: 记录后端工程师在基础原理、系统设计、项目复盘与面试准备中的持续积累。
+  tagline: Crypto 行业 Java 后端工程师，专注交易系统、资产账户、链上数据同步与高可靠后端架构。
+  image:
+    src: /logo.png
+    alt: 慕黎尘渊的博客
   actions:
     - theme: brand
-      text: 开始阅读
-      link: /java/hashmap
+      text: 交易系统
+      link: /system-design/crypto-trading-system
     - theme: alt
-      text: 面试专题
-      link: /interview/backend-roadmap
+      text: 资产一致性
+      link: /database/asset-accounting
 
 features:
-  - title: Java 基础
-    details: 集中梳理集合、并发、JVM 与常见源码面试题。
-  - title: 工程实践
-    details: 覆盖 Spring、数据库、中间件和分布式系统设计。
-  - title: 项目复盘
-    details: 把真实业务中的性能优化、排障和架构权衡沉淀为方法论。
+  - title: Trading System
+    details: 订单、撮合、账户、资金流水、风控与延迟治理。
+  - title: Web3 Infrastructure
+    details: 钱包、节点 RPC、区块扫描、链上确认和重组处理。
+  - title: Java Backend
+    details: 并发、JVM、Spring、MySQL、Redis、Kafka 与可观测性。
 ---
 
 ## 最新文章
 
 <div class="grid-cards">
   <div class="grid-card">
-    <h3><a href="/mlcy-blog/java/hashmap">HashMap 原理</a></h3>
-    <p>从数组、链表、红黑树聊到扩容与并发风险。</p>
+    <h3><a href="/mlcy-blog/system-design/crypto-trading-system">Crypto 交易系统架构</a></h3>
+    <p>从订单、撮合、账户、资金流水到风控，梳理交易平台核心链路。</p>
   </div>
   <div class="grid-card">
-    <h3><a href="/mlcy-blog/database/mysql-index">MySQL 索引设计</a></h3>
-    <p>理解最左前缀、回表、覆盖索引与慢查询治理。</p>
+    <h3><a href="/mlcy-blog/database/asset-accounting">资产账户一致性</a></h3>
+    <p>围绕冻结、解冻、入账、幂等和审计，设计避免资损的账户模型。</p>
   </div>
   <div class="grid-card">
-    <h3><a href="/mlcy-blog/system-design/seckill-system">秒杀系统设计</a></h3>
-    <p>围绕高并发流量削峰、库存一致性和降级展开。</p>
+    <h3><a href="/mlcy-blog/middleware/wallet-deposit-withdraw">充值提现链路</a></h3>
+    <p>处理链上确认、区块回滚、提现审核、签名广播与状态机流转。</p>
   </div>
 </div>
 
@@ -43,22 +46,22 @@ features:
 
 <div class="grid-cards">
   <div class="grid-card">
-    <h3>基础能力</h3>
-    <p>Java、JVM、数据库、网络、操作系统。</p>
+    <h3>交易与资金</h3>
+    <p>订单、撮合、资产账户、资金流水、风控、清结算。</p>
   </div>
   <div class="grid-card">
-    <h3>框架生态</h3>
-    <p>Spring Boot、Spring Cloud、MyBatis、消息队列。</p>
+    <h3>链上工程</h3>
+    <p>钱包、充值提现、节点 RPC、区块扫描、事件解析、链重组。</p>
   </div>
   <div class="grid-card">
-    <h3>架构进阶</h3>
-    <p>缓存、高可用、可观测性、系统设计与项目复盘。</p>
+    <h3>Java 基建</h3>
+    <p>Spring、JVM、MySQL、Redis、Kafka、WebSocket、可观测性。</p>
   </div>
 </div>
 
 ## 推荐阅读
 
-- [Java 集合源码专题](/java/hashmap)
-- [Redis 缓存设计](/middleware/redis)
-- [订单系统实战复盘](/projects/order-system)
-- [后端面试复盘策略](/interview/backend-roadmap)
+- [Crypto 交易系统整体架构设计](/system-design/crypto-trading-system)
+- [资产账户系统的幂等与一致性设计](/database/asset-accounting)
+- [充值提现系统：链上确认、区块回滚与状态机](/middleware/wallet-deposit-withdraw)
+- [行情推送系统：WebSocket、Redis 与 Kafka 实践](/projects/market-data-push)

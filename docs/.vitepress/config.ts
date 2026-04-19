@@ -2,11 +2,21 @@ import { defineConfig } from 'vitepress'
 
 const sidebar = [
   {
+    text: 'Crypto Backend',
+    collapsed: false,
+    items: [
+      { text: '交易系统架构', link: '/system-design/crypto-trading-system' },
+      { text: '资产账户一致性', link: '/database/asset-accounting' },
+      { text: '充值提现链路', link: '/middleware/wallet-deposit-withdraw' },
+      { text: '行情推送系统', link: '/projects/market-data-push' }
+    ]
+  },
+  {
     text: 'Java',
     collapsed: false,
     items: [
         { text: '集合', link: '/java/collection' },
-      { text: 'HashMap 原理', link: '/java/hashmap' }
+      { text: 'HashMap&ConcurrentHashMap', link: '/java/hashmap' }
     ]
   },
   {
@@ -61,7 +71,9 @@ export default defineConfig({
   title: '慕黎尘渊',
   description: '君子藏器于身，待时而动',
   head: [
-    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/mlcy-blog/logo.svg' }]
+    ['link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/mlcy-blog/favicon.png' }],
+    ['link', { rel: 'apple-touch-icon', sizes: '192x192', href: '/mlcy-blog/apple-touch-icon.png' }],
+    ['link', { rel: 'shortcut icon', href: '/mlcy-blog/favicon.ico' }]
   ],
   srcDir: '.',
   base: '/mlcy-blog/',
@@ -79,7 +91,7 @@ export default defineConfig({
     }
   },
   themeConfig: {
-    logo: '/logo.svg',
+    logo: '/logo.png',
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Java', link: '/java/collection' },
@@ -87,7 +99,7 @@ export default defineConfig({
       { text: 'JVM', link: '/jvm/gc-tuning' },
       { text: 'Database', link: '/database/mysql-index' },
       { text: 'Middleware', link: '/middleware/redis' },
-      { text: 'System Design', link: '/system-design/seckill-system' },
+      { text: 'Trading System', link: '/system-design/crypto-trading-system' },
       { text: 'Projects', link: '/projects/order-system' },
       { text: 'Interview', link: '/interview/backend-roadmap' },
       { text: 'Tools', link: '/tools/git-workflow' },

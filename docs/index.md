@@ -26,15 +26,15 @@ features:
 
 <div class="grid-cards">
   <div class="grid-card">
-    <h3><a href="/my-tech-blog/java/hashmap">HashMap 原理</a></h3>
+    <h3><a href="/mlcy-blog/java/hashmap">HashMap 原理</a></h3>
     <p>从数组、链表、红黑树聊到扩容与并发风险。</p>
   </div>
   <div class="grid-card">
-    <h3><a href="/my-tech-blog/database/mysql-index">MySQL 索引设计</a></h3>
+    <h3><a href="/mlcy-blog/database/mysql-index">MySQL 索引设计</a></h3>
     <p>理解最左前缀、回表、覆盖索引与慢查询治理。</p>
   </div>
   <div class="grid-card">
-    <h3><a href="/my-tech-blog/system-design/seckill-system">秒杀系统设计</a></h3>
+    <h3><a href="/mlcy-blog/system-design/seckill-system">秒杀系统设计</a></h3>
     <p>围绕高并发流量削峰、库存一致性和降级展开。</p>
   </div>
 </div>

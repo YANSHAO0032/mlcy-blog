@@ -58,7 +58,7 @@ export default defineConfig({
   title: 'Java Backend Blog',
   description: '技术沉淀 + 面试进阶',
   srcDir: '.',
-  base: '/my-tech-blog/',
+  base: '/mlcy-blog/',
   outDir: '.vitepress/dist',
   cleanUrls: true,
   lastUpdated: true,

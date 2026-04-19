@@ -17,6 +17,13 @@
     linear-gradient(180deg, rgba(255, 251, 235, 0.9) 0%, rgba(255, 255, 255, 1) 25%);
 }
 
+.dark .VPHome {
+  background:
+    radial-gradient(circle at top left, rgba(245, 158, 11, 0.12), transparent 30%),
+    radial-gradient(circle at 80% 12%, rgba(20, 184, 166, 0.1), transparent 26%),
+    linear-gradient(180deg, rgba(17, 24, 39, 0.98) 0%, var(--vp-c-bg) 36%);
+}
+
 .vp-doc h2 {
   border-top: none;
   margin-top: 2rem;
@@ -33,11 +40,25 @@
   border: 1px solid var(--vp-c-divider);
   border-radius: 16px;
   padding: 1.1rem;
-  background: rgba(255, 255, 255, 0.9);
+  color: var(--vp-c-text-1);
+  background: color-mix(in srgb, var(--vp-c-bg-soft) 88%, transparent);
   box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+}
+
+.dark .grid-card {
+  background: color-mix(in srgb, var(--vp-c-bg-soft) 92%, transparent);
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.28);
 }
 
 .grid-card h3 {
   margin-top: 0;
   margin-bottom: 0.5rem;
+}
+
+.grid-card p {
+  color: var(--vp-c-text-2);
+}
+
+.grid-card a {
+  color: var(--vp-c-brand-1);
 }

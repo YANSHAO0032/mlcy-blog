@@ -61,7 +61,7 @@ export default defineConfig({
   title: '慕黎尘渊',
   description: '君子藏器于身，待时而动',
   head: [
-    ['link', { rel: 'icon', type: 'image/svg+xml', href: './logo.svg' }]
+    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/mlcy-blog/logo.svg' }]
   ],
   srcDir: '.',
   base: '/mlcy-blog/',
@@ -79,7 +79,7 @@ export default defineConfig({
     }
   },
   themeConfig: {
-    logo: './logo.svg',
+    logo: '/logo.svg',
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Java', link: '/java/collection' },

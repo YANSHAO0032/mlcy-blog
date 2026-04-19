@@ -4,7 +4,10 @@ const sidebar = [
   {
     text: 'Java',
     collapsed: false,
-    items: [{ text: 'HashMap 原理', link: '/java/hashmap' }]
+    items: [
+        { text: '集合', link: '/java/collection' },
+      { text: 'HashMap 原理', link: '/java/hashmap' }
+    ]
   },
   {
     text: 'Spring',
@@ -55,8 +58,11 @@ const sidebar = [
 
 export default defineConfig({
   lang: 'zh-CN',
-  title: 'Java Backend Blog',
-  description: '技术沉淀 + 面试进阶',
+  title: '慕黎尘渊',
+  description: '君子藏器于身，待时而动',
+  head: [
+    ['link', { rel: 'icon', type: 'image/svg+xml', href: './logo.svg' }]
+  ],
   srcDir: '.',
   base: '/mlcy-blog/',
   outDir: '.vitepress/dist',
@@ -73,10 +79,10 @@ export default defineConfig({
     }
   },
   themeConfig: {
-    logo: '/logo.svg',
+    logo: './logo.svg',
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Java', link: '/java/hashmap' },
+      { text: 'Java', link: '/java/collection' },
       { text: 'Spring', link: '/spring/boot-autoconfiguration' },
       { text: 'JVM', link: '/jvm/gc-tuning' },
       { text: 'Database', link: '/database/mysql-index' },
@@ -88,9 +94,9 @@ export default defineConfig({
       { text: 'Thinking', link: '/thinking/engineering-growth' }
     ],
     sidebar,
-    search: {
-      provider: 'local'
-    },
+    // search: {
+    //   provider: 'local'
+    // },
     socialLinks: [
       { icon: 'github', link: 'https://github.com/YANSHAO0032/mlcy-blog' }
     ],

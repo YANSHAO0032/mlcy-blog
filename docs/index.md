@@ -2,9 +2,9 @@
 layout: home
 
 hero:
-  name: Java Backend Blog
-  text: 技术沉淀 + 面试进阶
-  tagline: 记录 Java 后端工程师在基础原理、系统设计、项目复盘与面试准备中的持续积累。
+  name: MuLiChenYuan's Blog
+  text: 君子藏器于身，待时而动
+  tagline: 记录后端工程师在基础原理、系统设计、项目复盘与面试准备中的持续积累。
   actions:
     - theme: brand
       text: 开始阅读

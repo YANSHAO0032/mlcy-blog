@@ -15,8 +15,10 @@ const sidebar = [
     text: 'Java',
     collapsed: false,
     items: [
-        { text: '集合', link: '/java/collection' },
-      { text: 'HashMap&ConcurrentHashMap', link: '/java/hashmap' }
+      { text: '集合', link: '/java/collection' },
+      { text: 'HashMap&ConcurrentHashMap', link: '/java/hashmap' },
+      { text: '多线程', link: '/java/multithreading' },
+      { text: '锁机制', link: '/java/locks' },
     ]
   },
   {
@@ -79,7 +81,7 @@ export default defineConfig({
   base: '/mlcy-blog/',
   outDir: '.vitepress/dist',
   cleanUrls: true,
-  lastUpdated: true,
+  lastUpdated: false,
   ignoreDeadLinks: false,
   markdown: {
     lineNumbers: true,

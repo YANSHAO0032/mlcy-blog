@@ -59,7 +59,7 @@ const sidebar = [
   {
     text: 'Tools',
     collapsed: false,
-    items: [{ text: 'Git 高效协作', link: '/tools/git-workflow' }]
+    items: [{ text: 'AI 工程工具链', link: '/tools/ai-engineering-tools' }]
   },
   {
     text: 'Thinking',
@@ -104,7 +104,7 @@ export default defineConfig({
       { text: 'Trading System', link: '/system-design/crypto-trading-system' },
       { text: 'Projects', link: '/projects/order-system' },
       { text: 'Interview', link: '/interview/backend-roadmap' },
-      { text: 'Tools', link: '/tools/git-workflow' },
+      { text: 'Tools', link: '/tools/ai-engineering-tools' },
       { text: 'Thinking', link: '/thinking/engineering-growth' }
     ],
     sidebar,

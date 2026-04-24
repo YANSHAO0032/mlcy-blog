@@ -6,6 +6,7 @@ const sidebar = [
     collapsed: false,
     items: [
       { text: '交易系统架构', link: '/system-design/crypto-trading-system' },
+      { text: '代理增长与返佣结算', link: '/projects/growth-rebate-system' },
       { text: '资产账户一致性', link: '/database/asset-accounting' },
       { text: '充值提现链路', link: '/middleware/wallet-deposit-withdraw' },
       { text: '行情推送系统', link: '/projects/market-data-push' }
@@ -48,12 +49,18 @@ const sidebar = [
   {
     text: 'System Design',
     collapsed: false,
-    items: [{ text: '撮合引擎架构设计', link: '/system-design/matching-engine-architecture' }]
+    items: [
+      { text: '交易系统架构', link: '/system-design/crypto-trading-system' },
+      { text: '撮合引擎架构设计', link: '/system-design/matching-engine-architecture' }
+    ]
   },
   {
     text: 'Projects',
     collapsed: false,
-    items: [{ text: 'matching-engine 项目拆解', link: '/projects/matching-engine-project' }]
+    items: [
+      { text: '代理增长与返佣结算', link: '/projects/growth-rebate-system' },
+      { text: 'matching-engine 项目拆解', link: '/projects/matching-engine-project' }
+    ]
   },
   {
     text: 'Interview',
@@ -106,7 +113,7 @@ export default defineConfig({
       { text: 'Database', link: '/database/mysql-index' },
       { text: 'Middleware', link: '/middleware/redis' },
       { text: 'Trading System', link: '/system-design/crypto-trading-system' },
-      { text: 'Projects', link: '/projects/matching-engine-project' },
+      { text: 'Projects', link: '/projects/growth-rebate-system' },
       { text: 'Interview', link: '/interview/backend-roadmap' },
       { text: 'Tools', link: '/tools/ai-engineering-tools' },
       { text: 'Thinking', link: '/thinking/engineering-growth' }

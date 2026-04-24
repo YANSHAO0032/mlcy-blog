@@ -39,17 +39,21 @@ const sidebar = [
   {
     text: 'Middleware',
     collapsed: false,
-    items: [{ text: 'Redis 缓存设计', link: '/middleware/redis' }]
+    items: [
+      { text: 'Redis 缓存设计', link: '/middleware/redis' },
+      { text: 'Kafka 消息队列', link: '/middleware/kafka' },
+      { text: 'Elasticsearch 检索设计', link: '/middleware/elasticsearch' }
+    ]
   },
   {
     text: 'System Design',
     collapsed: false,
-    items: [{ text: '秒杀系统设计', link: '/system-design/seckill-system' }]
+    items: [{ text: '撮合引擎架构设计', link: '/system-design/matching-engine-architecture' }]
   },
   {
     text: 'Projects',
     collapsed: false,
-    items: [{ text: '订单系统实战复盘', link: '/projects/order-system' }]
+    items: [{ text: 'matching-engine 项目拆解', link: '/projects/matching-engine-project' }]
   },
   {
     text: 'Interview',
@@ -64,7 +68,7 @@ const sidebar = [
   {
     text: 'Thinking',
     collapsed: false,
-    items: [{ text: '技术成长方法论', link: '/thinking/engineering-growth' }]
+    items: [{ text: 'AI 时代程序员成长', link: '/thinking/engineering-growth' }]
   }
 ]
 
@@ -102,7 +106,7 @@ export default defineConfig({
       { text: 'Database', link: '/database/mysql-index' },
       { text: 'Middleware', link: '/middleware/redis' },
       { text: 'Trading System', link: '/system-design/crypto-trading-system' },
-      { text: 'Projects', link: '/projects/order-system' },
+      { text: 'Projects', link: '/projects/matching-engine-project' },
       { text: 'Interview', link: '/interview/backend-roadmap' },
       { text: 'Tools', link: '/tools/ai-engineering-tools' },
       { text: 'Thinking', link: '/thinking/engineering-growth' }

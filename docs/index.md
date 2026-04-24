@@ -33,12 +33,12 @@ features:
     <p>从订单、撮合、账户、资金流水到风控，梳理交易平台核心链路。</p>
   </div>
   <div class="grid-card">
-    <h3><a href="/mlcy-blog/database/asset-accounting">资产账户一致性</a></h3>
-    <p>围绕冻结、解冻、入账、幂等和审计，设计避免资损的账户模型。</p>
+    <h3><a href="/mlcy-blog/system-design/matching-engine-architecture">撮合引擎架构设计</a></h3>
+    <p>围绕 Single Thread Actor、RingBuffer、事件溯源和多市场管理拆解核心设计。</p>
   </div>
   <div class="grid-card">
-    <h3><a href="/mlcy-blog/middleware/wallet-deposit-withdraw">充值提现链路</a></h3>
-    <p>处理链上确认、区块回滚、提现审核、签名广播与状态机流转。</p>
+    <h3><a href="/mlcy-blog/projects/matching-engine-project">matching-engine 项目拆解</a></h3>
+    <p>从 SkipList、价格档位 FIFO、Iceberg、Snapshot/Restore 到 Replay 语义复盘实现细节。</p>
   </div>
 </div>
 
@@ -62,6 +62,6 @@ features:
 ## 推荐阅读
 
 - [Crypto 交易系统整体架构设计](/system-design/crypto-trading-system)
+- [撮合引擎架构设计：Actor、RingBuffer 与 Event Sourcing](/system-design/matching-engine-architecture)
+- [matching-engine 项目拆解：OrderBook、SkipList 与 Iceberg](/projects/matching-engine-project)
 - [资产账户系统的幂等与一致性设计](/database/asset-accounting)
-- [充值提现系统：链上确认、区块回滚与状态机](/middleware/wallet-deposit-withdraw)
-- [行情推送系统：WebSocket、Redis 与 Kafka 实践](/projects/market-data-push)

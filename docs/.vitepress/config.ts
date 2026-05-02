@@ -25,7 +25,12 @@ const sidebar = [
   {
     text: 'Spring',
     collapsed: false,
-    items: [{ text: 'Spring Boot 自动装配', link: '/spring/boot-autoconfiguration' }]
+    items: [
+      { text: 'Spring Boot 自动装配', link: '/spring/boot-autoconfiguration' },
+      { text: 'Bean 生命周期', link: '/spring/bean-lifecycle' },
+      { text: '事务边界设计', link: '/spring/transaction-boundaries' },
+      { text: '事件驱动实践', link: '/spring/event-driven-spring' }
+    ]
   },
   {
     text: 'JVM',

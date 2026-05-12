@@ -8,7 +8,7 @@ const sidebar = [
       { text: '交易系统架构', link: '/system-design/crypto-trading-system' },
       { text: '代理增长与返佣结算', link: '/projects/growth-rebate-system' },
       { text: '资产账户一致性', link: '/database/asset-accounting' },
-      { text: '充值提现链路', link: '/middleware/wallet-deposit-withdraw' },
+      { text: '撮合引擎架构设计', link: '/system-design/matching-engine-architecture' },
       { text: '行情推送系统', link: '/projects/market-data-push' }
     ]
   },
@@ -41,6 +41,7 @@ const sidebar = [
     text: 'Database',
     collapsed: false,
     items: [
+      { text: '资产账户一致性', link: '/database/asset-accounting' },
       { text: 'MySQL 索引设计', link: '/database/mysql-index' },
       { text: 'MySQL 事务与隔离级别', link: '/database/mysql-transaction-isolation' },
       { text: 'MySQL 锁与 MVCC', link: '/database/mysql-lock-mvcc' },

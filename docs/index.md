@@ -4,7 +4,7 @@ layout: home
 hero:
   name: 慕黎尘渊的博客
   text: 君子藏器于身，待时而动
-  tagline: 聚焦交易系统架构、代理增长结算、资产账户与行情事件流的 Crypto Java 后端实践。
+  tagline: 聚焦交易系统架构、资产账户一致性、代理增长结算与行情事件流的 Crypto Java 后端实践。
   image:
     src: /logo.png
     alt: 慕黎尘渊的博客
@@ -19,8 +19,8 @@ hero:
 features:
   - title: Trading System
     details: 交易系统架构、订单路由、账户流水、行情推送与风控治理。
-  - title: Web3 Infrastructure
-    details: 钱包、节点 RPC、区块扫描、链上确认、提现状态机和回滚处理。
+  - title: Trading Infrastructure
+    details: 撮合架构、事件流分发、账户一致性、可回放与故障恢复设计。
   - title: Java Backend
     details: 并发、JVM、Spring、MySQL、Redis、Kafka、ES 与增长后台工程实践。
 ---
@@ -30,7 +30,7 @@ features:
 <div class="grid-cards">
   <div class="grid-card">
     <h3><a href="/mlcy-blog/system-design/crypto-trading-system">Crypto 交易系统整体架构</a></h3>
-    <p>从交易入口、订单流转、资产协同到风控与可观测性，梳理现货系统的核心边界。</p>
+    <p>从接入、编排、撮合、资金到账户事件流，梳理现货交易系统真正重要的架构边界。</p>
   </div>
   <div class="grid-card">
     <h3><a href="/mlcy-blog/projects/growth-rebate-system">代理增长与返佣结算系统</a></h3>
@@ -47,7 +47,7 @@ features:
 <div class="grid-cards">
   <div class="grid-card">
     <h3>现货与资金</h3>
-    <p>交易系统架构、订单路由、资产账户、资金流水、返佣结算与风控。</p>
+    <p>交易系统架构、账户一致性、资金流水、事件分发、返佣结算与风控。</p>
   </div>
   <div class="grid-card">
     <h3>增长与运营</h3>

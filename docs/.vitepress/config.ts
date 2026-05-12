@@ -40,7 +40,12 @@ const sidebar = [
   {
     text: 'Database',
     collapsed: false,
-    items: [{ text: 'MySQL 索引设计', link: '/database/mysql-index' }]
+    items: [
+      { text: 'MySQL 索引设计', link: '/database/mysql-index' },
+      { text: 'MySQL 事务与隔离级别', link: '/database/mysql-transaction-isolation' },
+      { text: 'MySQL 锁与 MVCC', link: '/database/mysql-lock-mvcc' },
+      { text: 'SQL 优化实践', link: '/database/sql-optimization' }
+    ]
   },
   {
     text: 'Middleware',

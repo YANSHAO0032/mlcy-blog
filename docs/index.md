@@ -2,9 +2,9 @@
 layout: home
 
 hero:
-  name: Crypto 现货交易系统负责人实践
-  text: 从下单、撮合、资金到账户、行情、风控与运营增长
-  tagline: 以真实交易所后端工程为背景，沉淀现货业务负责人需要掌握的系统边界、工程决策、故障治理和增长结算能力。
+  name: 慕黎尘渊的博客
+  text: 君子藏器于身，待时而动
+  tagline: 聚焦交易系统架构、资产账户一致性、代理增长结算与行情事件流的 Crypto Java 后端实践。
   image:
     src: /logo.png
     alt: 慕黎尘渊的博客

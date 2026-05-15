@@ -101,7 +101,7 @@ export default defineConfig({
   base: '/mlcy-blog/',
   outDir: '.vitepress/dist',
   cleanUrls: true,
-  lastUpdated: true,
+  lastUpdated: false,
   ignoreDeadLinks: false,
   markdown: {
     lineNumbers: true,
@@ -125,9 +125,9 @@ export default defineConfig({
       { text: 'Interview', link: '/interview/backend-roadmap' }
     ],
     sidebar,
-    search: {
-      provider: 'local'
-    },
+    // search: {
+    //   provider: 'local'
+    // },
     socialLinks: [
       { icon: 'github', link: 'https://github.com/YANSHAO0032/mlcy-blog' }
     ],

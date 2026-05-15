@@ -2,14 +2,26 @@ import { defineConfig } from 'vitepress'
 
 const sidebar = [
   {
-    text: 'Crypto Backend',
+    text: 'Spot System',
+    collapsed: false,
+    items: [
+      { text: '现货交易系统总览', link: '/spot-system/overview' },
+      { text: '下单链路与订单状态机', link: '/spot-system/order-lifecycle' },
+      { text: '账户资金与流水一致性', link: '/spot-system/account-ledger' },
+      { text: '撮合路由与多节点治理', link: '/spot-system/matching-routing' },
+      { text: '币对生命周期与上币流程', link: '/spot-system/symbol-launch' },
+      { text: '代理增长与返佣结算', link: '/projects/growth-rebate-system' },
+      { text: '行情推送系统', link: '/projects/market-data-push' }
+    ]
+  },
+  {
+    text: 'Trading Infrastructure',
     collapsed: false,
     items: [
       { text: '交易系统架构', link: '/system-design/crypto-trading-system' },
-      { text: '代理增长与返佣结算', link: '/projects/growth-rebate-system' },
-      { text: '资产账户一致性', link: '/database/asset-accounting' },
       { text: '撮合引擎架构设计', link: '/system-design/matching-engine-architecture' },
-      { text: '行情推送系统', link: '/projects/market-data-push' }
+      { text: 'matching-engine 项目拆解', link: '/projects/matching-engine-project' },
+      { text: '资产账户一致性', link: '/database/asset-accounting' }
     ]
   },
   {
@@ -19,7 +31,7 @@ const sidebar = [
       { text: '集合', link: '/java/collection' },
       { text: 'HashMap&ConcurrentHashMap', link: '/java/hashmap' },
       { text: '多线程', link: '/java/multithreading' },
-      { text: '锁机制', link: '/java/locks' },
+      { text: '锁机制', link: '/java/locks' }
     ]
   },
   {
@@ -31,11 +43,6 @@ const sidebar = [
       { text: '事务边界设计', link: '/spring/transaction-boundaries' },
       { text: '事件驱动实践', link: '/spring/event-driven-spring' }
     ]
-  },
-  {
-    text: 'JVM',
-    collapsed: false,
-    items: [{ text: 'GC 调优入门', link: '/jvm/gc-tuning' }]
   },
   {
     text: 'Database',
@@ -58,42 +65,33 @@ const sidebar = [
     ]
   },
   {
-    text: 'System Design',
+    text: 'JVM',
     collapsed: false,
     items: [
-      { text: '交易系统架构', link: '/system-design/crypto-trading-system' },
-      { text: '撮合引擎架构设计', link: '/system-design/matching-engine-architecture' }
-    ]
-  },
-  {
-    text: 'Projects',
-    collapsed: false,
-    items: [
-      { text: '代理增长与返佣结算', link: '/projects/growth-rebate-system' },
-      { text: 'matching-engine 项目拆解', link: '/projects/matching-engine-project' }
+      { text: 'GC 调优入门', link: '/jvm/gc-tuning' }
     ]
   },
   {
     text: 'Interview',
     collapsed: false,
-    items: [{ text: '后端面试复盘策略', link: '/interview/backend-roadmap' }]
+    items: [
+      { text: '后端面试复盘策略', link: '/interview/backend-roadmap' }
+    ]
   },
   {
-    text: 'Tools',
+    text: 'Tools & Thinking',
     collapsed: false,
-    items: [{ text: 'AI 工程工具链', link: '/tools/ai-engineering-tools' }]
-  },
-  {
-    text: 'Thinking',
-    collapsed: false,
-    items: [{ text: 'AI 时代程序员成长', link: '/thinking/engineering-growth' }]
+    items: [
+      { text: 'AI 工程工具链', link: '/tools/ai-engineering-tools' },
+      { text: 'AI 时代程序员成长', link: '/thinking/engineering-growth' }
+    ]
   }
 ]
 
 export default defineConfig({
   lang: 'zh-CN',
   title: '慕黎尘渊',
-  description: '君子藏器于身，待时而动',
+  description: 'Crypto 现货交易系统负责人实践',
   head: [
     ['link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/mlcy-blog/favicon.png' }],
     ['link', { rel: 'apple-touch-icon', sizes: '192x192', href: '/mlcy-blog/apple-touch-icon.png' }],
@@ -103,7 +101,7 @@ export default defineConfig({
   base: '/mlcy-blog/',
   outDir: '.vitepress/dist',
   cleanUrls: true,
-  lastUpdated: false,
+  lastUpdated: true,
   ignoreDeadLinks: false,
   markdown: {
     lineNumbers: true,
@@ -118,21 +116,18 @@ export default defineConfig({
     logo: '/logo.png',
     nav: [
       { text: 'Home', link: '/' },
+      { text: 'Spot System', link: '/spot-system/overview' },
+      { text: 'Trading Infra', link: '/system-design/crypto-trading-system' },
       { text: 'Java', link: '/java/collection' },
       { text: 'Spring', link: '/spring/boot-autoconfiguration' },
-      { text: 'JVM', link: '/jvm/gc-tuning' },
       { text: 'Database', link: '/database/mysql-index' },
       { text: 'Middleware', link: '/middleware/redis' },
-      { text: 'Trading System', link: '/system-design/crypto-trading-system' },
-      { text: 'Projects', link: '/projects/growth-rebate-system' },
-      { text: 'Interview', link: '/interview/backend-roadmap' },
-      { text: 'Tools', link: '/tools/ai-engineering-tools' },
-      { text: 'Thinking', link: '/thinking/engineering-growth' }
+      { text: 'Interview', link: '/interview/backend-roadmap' }
     ],
     sidebar,
-    // search: {
-    //   provider: 'local'
-    // },
+    search: {
+      provider: 'local'
+    },
     socialLinks: [
       { icon: 'github', link: 'https://github.com/YANSHAO0032/mlcy-blog' }
     ],

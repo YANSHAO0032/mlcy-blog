@@ -61,6 +61,8 @@ const sidebar = [
     items: [
       { text: 'Redis 缓存设计', link: '/middleware/redis' },
       { text: 'Kafka 消息队列', link: '/middleware/kafka' },
+      { text: 'RocketMQ 消息队列', link: '/middleware/rocketmq' },
+      { text: 'RocketMQ 与 Kafka 对比', link: '/middleware/rocketmq-vs-kafka' },
       { text: 'Elasticsearch 检索设计', link: '/middleware/elasticsearch' }
     ]
   },

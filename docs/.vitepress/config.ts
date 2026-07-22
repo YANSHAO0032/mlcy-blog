@@ -70,7 +70,10 @@ const sidebar = [
     text: 'JVM',
     collapsed: false,
     items: [
-      { text: 'GC 调优入门', link: '/jvm/gc-tuning' }
+      { text: 'GC 调优入门', link: '/jvm/gc-tuning' },
+      { text: 'G1 垃圾收集器', link: '/jvm/g1' },
+      { text: 'ZGC 垃圾收集器', link: '/jvm/zgc' },
+      { text: 'G1 与 ZGC 对比', link: '/jvm/g1-vs-zgc' }
     ]
   },
   {

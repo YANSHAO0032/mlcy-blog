@@ -97,6 +97,7 @@ export default defineConfig({
   lang: 'zh-CN',
   title: '慕黎尘渊',
   description: 'Crypto 现货交易系统负责人实践',
+  appearance: 'force-dark',
   head: [
     ['link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/mlcy-blog/favicon.png' }],
     ['link', { rel: 'apple-touch-icon', sizes: '192x192', href: '/mlcy-blog/apple-touch-icon.png' }],

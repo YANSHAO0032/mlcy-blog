@@ -1,72 +1,113 @@
----
+﻿---
 layout: home
-
-hero:
-  name: 慕黎尘渊的博客
-  text: 君子藏器于身，待时而动
-  tagline: 聚焦交易系统架构、资产账户一致性、代理增长结算与行情事件流的 Crypto Java 后端实践。
-  image:
-    src: /logo.png
-    alt: 慕黎尘渊的博客
-  actions:
-    - theme: brand
-      text: 现货系统地图
-      link: /spot-system/overview
-    - theme: alt
-      text: 账户资金一致性
-      link: /spot-system/account-ledger
-
-features:
-  - title: Spot Trading
-    details: 下单校验、订单状态机、撮合路由、币对生命周期、盘口与成交事件。
-  - title: Asset & Risk
-    details: 账户锁定、资金流水、手续费、幂等、对账、补偿、风控限额与白名单。
-  - title: Operation Growth
-    details: 上币配置、运营后台、VIP 费率、平台币抵扣、代理返佣、统计报表与反作弊。
+title: 慕黎尘渊
+titleTemplate: Crypto 交易系统与 Java 后端
 ---
-
-## 现货负责人内容地图
-
-<div class="grid-cards">
-  <div class="grid-card">
-    <h3><a href="/mlcy-blog/spot-system/overview">现货交易系统总览</a></h3>
-    <p>把接入、订单、撮合、资金、行情、风控、运营和对账拆成负责人可治理的业务边界。</p>
-  </div>
-  <div class="grid-card">
-    <h3><a href="/mlcy-blog/spot-system/order-lifecycle">下单链路与订单状态机</a></h3>
-    <p>从用户请求进入系统开始，梳理参数校验、交易权限、价格保护、资金冻结、落库和撮合投递。</p>
-  </div>
-  <div class="grid-card">
-    <h3><a href="/mlcy-blog/spot-system/account-ledger">账户资金与流水一致性</a></h3>
-    <p>资金系统不是扣数字，而是围绕账户锁、交易流水、历史快照、幂等和对账构建可信证据链。</p>
-  </div>
-  <div class="grid-card">
-    <h3><a href="/mlcy-blog/spot-system/matching-routing">撮合路由与多节点治理</a></h3>
-    <p>交易对如何绑定撮合集群，订单如何路由到确定节点，查询和撤单为什么也要走同一套路由语义。</p>
-  </div>
-  <div class="grid-card">
-    <h3><a href="/mlcy-blog/spot-system/symbol-launch">币对生命周期与上币流程</a></h3>
-    <p>上币不是新增一条配置，而是币种、账户、费率、白名单、行情、撮合、运营后台和风控的联动发布。</p>
-  </div>
-  <div class="grid-card">
-    <h3><a href="/mlcy-blog/projects/growth-rebate-system">代理增长与返佣结算</a></h3>
-    <p>从交易结果事件出发，拆解邀请关系、返佣明细、汇总统计、后台配置和防作弊治理。</p>
-  </div>
-</div>
-
-## 技术支撑体系
-
-<div class="grid-cards">
-  <div class="grid-card">
-    <h3>交易系统</h3>
-    <p>订单编排、撮合引擎、行情推送、事件流、故障恢复、审计和回放。</p>
-  </div>
-  <div class="grid-card">
-    <h3>资金与数据</h3>
-    <p>MySQL 事务、锁与 MVCC、资金流水、账户快照、SQL 优化、Redis 热点状态。</p>
-  </div>
-  <div class="grid-card">
-    <h3>Java 工程</h3>
-    <p>Spring 事务边界、事件驱动、并发控制、JVM 调优、Kafka 消息和 WebSocket 推送。</p>
-  </div>
+<div class="obsidian-home">
+  <aside class="profile-panel" aria-label="作者资料">
+    <div class="profile-panel__visual">
+      <img src="/logo.png" alt="慕黎尘渊 Logo">
+      <span>MLCY / ENGINEERING NOTES</span>
+    </div>
+    <div class="profile-panel__body">
+      <p class="profile-panel__eyebrow">Crypto · Java · Architecture</p>
+      <h1>慕黎尘渊</h1>
+      <p class="profile-panel__role">现货交易系统负责人</p>
+      <p class="profile-panel__intro">记录订单、撮合、资金、消息与 JVM 背后的工程判断，让复杂系统经得起真实流量和故障。</p>
+      <blockquote>君子藏器于身，待时而动。</blockquote>
+      <dl class="profile-panel__facts">
+        <div><dt>方向</dt><dd>交易系统 / 分布式架构</dd></div>
+        <div><dt>关注</dt><dd>一致性 / 低延迟 / 稳定性</dd></div>
+        <div><dt>运行时</dt><dd>Java 21 / Spring</dd></div>
+      </dl>
+      <nav class="profile-panel__links" aria-label="快速入口">
+        <a href="/mlcy-blog/spot-system/overview">现货系统</a>
+        <a href="/mlcy-blog/system-design/crypto-trading-system">架构设计</a>
+      </nav>
+    </div>
+  </aside>
+  <main class="home-feed">
+    <header class="home-feed__header">
+      <div>
+        <p class="home-kicker">FIELD NOTES / 2026</p>
+        <h2>写在交易系统的一线</h2>
+      </div>
+      <p>从业务约束出发，讨论架构选择、可靠性边界和生产故障恢复。</p>
+    </header>
+    <a class="featured-story" href="/mlcy-blog/spot-system/overview">
+      <div class="featured-story__meta">
+        <span>FEATURED</span>
+        <span>SPOT TRADING</span>
+      </div>
+      <div class="featured-story__content">
+        <p>专题总览</p>
+        <h2>现货交易系统：从订单入口到资金对账</h2>
+        <span>把接入、订单、撮合、账户、行情与风控拆成可治理的业务边界。</span>
+      </div>
+      <span class="featured-story__arrow" aria-hidden="true">↗</span>
+    </a>
+    <section class="article-section" aria-labelledby="latest-articles">
+      <div class="section-heading">
+        <div>
+          <p class="home-kicker">LATEST WRITING</p>
+          <h2 id="latest-articles">近期深度文章</h2>
+        </div>
+        <span>04 ARTICLES</span>
+      </div>
+      <div class="article-stream">
+        <a class="article-entry" href="/mlcy-blog/middleware/rocketmq-vs-kafka">
+          <span class="article-entry__index">01</span>
+          <div class="article-entry__body">
+            <div class="article-entry__meta"><span>MESSAGING</span><span>架构与可靠性</span></div>
+            <h3>RocketMQ 与 Kafka：架构、存储与高可用</h3>
+            <p>结合真实工程配置，分析两种消息队列如何落盘、复制、确认，以及消息不丢失的完整链路。</p>
+          </div>
+          <span class="article-entry__arrow" aria-hidden="true">→</span>
+        </a>
+        <a class="article-entry" href="/mlcy-blog/jvm/g1-vs-zgc">
+          <span class="article-entry__index">02</span>
+          <div class="article-entry__body">
+            <div class="article-entry__meta"><span>JVM / JDK 21</span><span>性能治理</span></div>
+            <h3>G1 与 ZGC：交易系统中的垃圾收集器选择</h3>
+            <p>比较停顿目标、吞吐成本、并发阶段与资源开销，给出面向低延迟服务的选择依据。</p>
+          </div>
+          <span class="article-entry__arrow" aria-hidden="true">→</span>
+        </a>
+        <a class="article-entry" href="/mlcy-blog/system-design/matching-engine-architecture">
+          <span class="article-entry__index">03</span>
+          <div class="article-entry__body">
+            <div class="article-entry__meta"><span>TRADING</span><span>低延迟架构</span></div>
+            <h3>撮合引擎架构：确定性、分片与故障恢复</h3>
+            <p>围绕交易对路由、内存状态、事件顺序和恢复流程，拆解撮合核心链路。</p>
+          </div>
+          <span class="article-entry__arrow" aria-hidden="true">→</span>
+        </a>
+        <a class="article-entry" href="/mlcy-blog/database/asset-accounting">
+          <span class="article-entry__index">04</span>
+          <div class="article-entry__body">
+            <div class="article-entry__meta"><span>DATABASE</span><span>资金安全</span></div>
+            <h3>资产账户一致性：流水、快照、幂等与对账</h3>
+            <p>资金系统不是简单扣减数字，而是构建一条可以核验、补偿和审计的证据链。</p>
+          </div>
+          <span class="article-entry__arrow" aria-hidden="true">→</span>
+        </a>
+      </div>
+    </section>
+    <section class="topic-section" aria-labelledby="topic-directory">
+      <div class="section-heading">
+        <div>
+          <p class="home-kicker">SYSTEM MAP</p>
+          <h2 id="topic-directory">现货负责人内容地图</h2>
+        </div>
+      </div>
+      <div class="topic-directory">
+        <a href="/mlcy-blog/spot-system/order-lifecycle"><span>01</span><strong>下单链路与订单状态机</strong><small>Order Flow</small></a>
+        <a href="/mlcy-blog/spot-system/account-ledger"><span>02</span><strong>账户资金与流水一致性</strong><small>Asset Safety</small></a>
+        <a href="/mlcy-blog/spot-system/matching-routing"><span>03</span><strong>撮合路由与多节点治理</strong><small>Routing</small></a>
+        <a href="/mlcy-blog/spot-system/symbol-launch"><span>04</span><strong>币对生命周期与上币</strong><small>Operations</small></a>
+        <a href="/mlcy-blog/projects/market-data-push"><span>05</span><strong>行情事件流与推送</strong><small>Market Data</small></a>
+        <a href="/mlcy-blog/projects/growth-rebate-system"><span>06</span><strong>代理增长与返佣结算</strong><small>Growth</small></a>
+      </div>
+    </section>
+  </main>
 </div>

@@ -54,14 +54,6 @@ features:
   </div>
 </div>
 
-## 推荐阅读路径
-
-1. 先读 [现货交易系统总览](/spot-system/overview)，建立业务边界。
-2. 再读 [下单链路与订单状态机](/spot-system/order-lifecycle)，理解主链路。
-3. 接着读 [账户资金与流水一致性](/spot-system/account-ledger)，守住资损底线。
-4. 然后读 [撮合路由与多节点治理](/spot-system/matching-routing)，理解低延迟链路。
-5. 最后读 [币对生命周期与上币流程](/spot-system/symbol-launch) 和 [代理增长与返佣结算](/projects/growth-rebate-system)，补齐运营负责人视角。
-
 ## 技术支撑体系
 
 <div class="grid-cards">

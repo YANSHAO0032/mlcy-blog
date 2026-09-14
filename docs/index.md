@@ -107,6 +107,7 @@ titleTemplate: Crypto 交易系统与 Java 后端
         <a href="/mlcy-blog/spot-system/symbol-launch"><span>04</span><strong>币对生命周期与上币</strong><small>Operations</small></a>
         <a href="/mlcy-blog/projects/market-data-push"><span>05</span><strong>行情事件流与推送</strong><small>Market Data</small></a>
         <a href="/mlcy-blog/projects/growth-rebate-system"><span>06</span><strong>代理增长与返佣结算</strong><small>Growth</small></a>
+        <a href="/mlcy-blog/rust/getting-started"><span>07</span><strong>Rust 后端开发：从入门到异步并发</strong><small>Rust</small></a>
       </div>
     </section>
   </main>

@@ -35,6 +35,18 @@ const sidebar = [
     ]
   },
   {
+    text: 'Rust',
+    collapsed: false,
+    items: [
+      { text: '从 Java 到 Rust：入门路线', link: '/rust/getting-started' },
+      { text: '所有权、借用与生命周期', link: '/rust/ownership-and-borrowing' },
+      { text: 'Option、Result 与错误边界', link: '/rust/error-handling' },
+      { text: 'trait、泛型与业务抽象', link: '/rust/traits-and-generics' },
+      { text: 'Arc、Mutex 与消息传递', link: '/rust/concurrency' },
+      { text: 'Tokio 异步任务与背压', link: '/rust/async-tokio' }
+    ]
+  },
+  {
     text: 'Spring',
     collapsed: false,
     items: [
@@ -125,6 +137,7 @@ export default defineConfig({
       { text: 'Spot System', link: '/spot-system/overview' },
       { text: 'Trading Infra', link: '/system-design/crypto-trading-system' },
       { text: 'Java', link: '/java/collection' },
+      { text: 'Rust', link: '/rust/getting-started' },
       { text: 'Spring', link: '/spring/boot-autoconfiguration' },
       { text: 'Database', link: '/database/mysql-index' },
       { text: 'Middleware', link: '/middleware/redis' },
